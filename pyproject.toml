@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "pytorch-tsmixer>=0.2.0",
     "torch>=2.8.0",
 ]
 

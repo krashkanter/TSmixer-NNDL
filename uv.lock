@@ -215,6 +215,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pytorch-tsmixer"
+version = "0.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "torch" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/59/c0/0706e4e0bf0c62c64757f7bf1bb0699233e8f98d8a65ac7dcb152a768f6b/pytorch-tsmixer-0.2.0.tar.gz", hash = "sha256:3cdae659ff37b1ce2d839508e94e304955a3ce56c4b952758801a05cbc808758", size = 10120, upload-time = "2023-12-12T20:19:41.601Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/d3/0fc7bc3efd3a2ff4f5684855117f1b2d0d5d5368d64fb4e800f00c82d14f/pytorch_tsmixer-0.2.0-py3-none-any.whl", hash = "sha256:7db21124777b204488ba2a0b72b788924a8c95437ad4de277077fdb2f19b4629", size = 10461, upload-time = "2023-12-12T20:19:39.399Z" },
+]
+
+[[package]]
 name = "setuptools"
 version = "80.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -296,11 +308,15 @@ name = "tsmixer-nndl"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "pytorch-tsmixer" },
     { name = "torch" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "torch", specifier = ">=2.8.0" }]
+requires-dist = [
+    { name = "pytorch-tsmixer", specifier = ">=0.2.0" },
+    { name = "torch", specifier = ">=2.8.0" },
+]
 
 [[package]]
 name = "typing-extensions"
