@@ -9,7 +9,6 @@ dependencies = [
     "pandas>=1.3.5",
     "pytorch-tsmixer>=0.2.0",
     "torch>=2.8.0",
-    "
 ]
 
 [[tool.uv.index]]
